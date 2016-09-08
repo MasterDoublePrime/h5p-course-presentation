@@ -24,9 +24,12 @@ H5P.CoursePresentation.NavigationLine = (function ($) {
             if (shortVerb === 'interacted') {
               that.updateProgressBarTasksAtSlideNumber(that.cp.currentSlideIndex);
             }
-            else if (shortVerb === 'completed') {
+            /*Commented by SUPRIYA RAJGOPAL on 8Sep16 since Question Set inside a Course Presentation was never getting 'completed'*/
+			      /*-------------------------------------*/
+            /*else if (shortVerb === 'completed') {
               event.setVerb('answered');
-            }
+            }*/
+			      /*-------------------------------------*/
             if (event.data.statement.context.extensions === undefined) {
               event.data.statement.context.extensions = {};
             }
