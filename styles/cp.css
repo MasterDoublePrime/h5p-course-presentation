@@ -811,3 +811,64 @@ border-collapse: collapse;
 .h5p-course-presentation .h5p-confirmation-dialog-popup {
   font-size: 0.85em;
 }
+
+/*Included by SUPRIYA RAJGOPAL on 19Sep16 to align the draggable elements inside a Course Presentation*/
+/*---------------------------------------------------------------------------------------------------*/
+.h5p-element.h5p-transparent
+{
+	width: 100% !important;
+	height: 100% !important;
+}
+.h5p-element-outer.h5p-questionset-outer-element
+{
+	width: 100% !important;
+	height: 100% !important;
+}
+.h5p-element-inner
+{
+	width: 100% !important;
+	height: 100% !important;
+}
+.questionset
+{
+	width: inherit !important;
+	height: 93% !important;
+}
+.question-container.h5p-question.h5p-dragquestion
+{
+	width: inherit !important;
+	height: inherit !important;
+}
+.h5p-question-content
+{
+	width: inherit !important;
+	height: inherit !important;
+}
+.h5p-question-content > .h5p-inner
+{
+	width: 99% !important;
+	height: inherit !important;
+	position: relative;
+}
+.h5p-question-content > .h5p-inner > .h5p-draggable
+{
+	width: 40%;
+	height: auto !important;
+	left: 3%;
+}
+.h5p-question-content > .h5p-inner > .h5p-dropzone
+{
+	width: 40% !important;
+	right: 3% !important;
+	left: auto !important;
+}
+.h5p-question-content > .h5p-inner > .h5p-dropzone > .h5p-label
+{
+	position: initial !important;
+}
+.h5p-question-content > .h5p-inner > .h5p-dropzone > .h5p-label > p
+{
+	word-break: break-word;
+	white-space: normal;
+}
+/*---------------------------------------------------------------------------------------------------*/
